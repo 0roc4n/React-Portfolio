@@ -1,8 +1,10 @@
 import Head from "next/head";
 import {
   AiFillTwitterCircle,
+  AiFillInstagram,
   AiFillLinkedin,
   AiFillYoutube,
+  AiFillFacebook,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
@@ -35,6 +37,12 @@ export default function Home() {
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="font-burtons text-xl">James DevOps</h1>
             <ul className="flex items-center">
+              <li className="dark:text-white text-black px-4 py-2 bg-from-cyan-500  hover:bg-gradient-to-r from-cyan-500 text- to-teal-500 hover:text-white rounded-md ml-8 ">
+                About Me
+              </li>
+              <li className="dark:text-white text-black px-4 py-2 bg-from-cyan-500  hover:bg-gradient-to-r from-cyan-500 text- to-teal-500 hover:text-white rounded-md mr-2">
+                Let's Connect
+              </li>
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
@@ -43,7 +51,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-2"
                   href="#"
                 >
                   My Resume
@@ -51,12 +59,13 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10 py-10">
+          <div className="text-center p-10 py-10 flex gap-2">
+            <div className="mr-10"> 
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               James Esparago
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              I am a <span>
+              I am a <span className=" text-teal-600">
               <TypeAnimation sequence={[
                 'Web Developer',
                 2000,
@@ -71,15 +80,15 @@ export default function Home() {
               </span>
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
+            I'm James, a BSIT student at Bicol University with a fervent passion for web development, networking, IoT, electronics, and automation. Exploring the intersections of technology, I strive to innovate and create impactful solutions. Join me on this journey of discovery and innovation!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
+              <AiFillInstagram />
               <AiFillLinkedin />
-              <AiFillYoutube />
+              <AiFillFacebook />
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+            </div>
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-0 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
             </div>
           </div>
@@ -104,17 +113,17 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={design} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Beautiful Designs
+                Web Development
               </h3>
               <p className="py-2">
                 Creating elegant designs suited for your needs following core
                 design theory.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 text-teal-600">Web Dev Tools I Use</h4>
+              <p className="text-gray-800 py-1">Laravel Framework</p>
+              <p className="text-gray-800 py-1">MySQL</p>
+              <p className="text-gray-800 py-1">Bootstrap/Tailwind</p>
+              <p className="text-gray-800 py-1"></p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={code} width={100} height={100} />
